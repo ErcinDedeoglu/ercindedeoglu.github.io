@@ -9,7 +9,10 @@ on:
   push:
     branches: [main]
     paths:
-      - 'data/**'
+      # NOT data/writing.json — that is the bot's own daily output; re-triggering
+      # on it would loop. Pages still deploys the bot commit (no [skip ci] below).
+      - 'data/site.json'
+      - 'data/projects.json'
       - 'scripts/build.py'
       - '.github/workflows/build.yml'
   workflow_dispatch:           # manual "Run workflow" button
@@ -44,6 +47,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes — site already up to date."
           else
-            git commit -m "chore: rebuild site from writing feed [skip ci]"
+            git commit -m "chore: rebuild site from writing feed"
             git push
           fi
