@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "kicker": "Sovereign AI · Banking",
+      "title": "Sovereign, model-agnostic LLM gateway",
+      "body": "A single in-country control point for every AI call: authentication, PII redaction, model routing, token metering and complete audit logging. Lets a regulated bank swap or upgrade models without rewriting applications — and keeps prompts, context and logs inside the sovereign cloud boundary.",
+      "meta": "LLM gateway · data residency · auditability",
+      "url": ""
+    },
+    {
+      "kicker": "RAG · Core banking",
+      "title": "RAG for core banking",
+      "body": "Retrieval-augmented generation engineered for audit: hybrid retrieval and reranking, grounded prompts with source citations, guardrails and PII handling, immutable audit logs, and human-in-the-loop for high-impact answers. Designed to explain itself to a regulator, not just to demo well.",
+      "meta": "retrieval · guardrails · traceability",
+      "url": ""
+    },
+    {
+      "kicker": "LLM · Optimization",
+      "title": "LLM token optimization (JSON → TOON)",
+      "body": "Moved a ~100,000-row dataset from JSON to TOON (Token-Oriented Object Notation) inside a production LLM pipeline and measured roughly <strong>60% fewer tokens</strong> with a <strong>~4% accuracy improvement</strong> on data-retrieval tasks — a lossless round-trip applied only at the prompt boundary.",
+      "meta": "~60% tokens · +4% accuracy · 100k rows",
+      "url": ""
+    },
+    {
+      "kicker": "Backend · Scale",
+      "title": "High-load real-time backend",
+      "body": "Designed and built a backend that sustained <strong>2,500,000 concurrent connections</strong>. The kind of load engineering — backend, frontend and database working as one system — that now underpins how I architect AI platforms that have to stay up under real production pressure.",
+      "meta": "2.5M concurrent connections",
+      "url": ""
+    }
+  ]
+}

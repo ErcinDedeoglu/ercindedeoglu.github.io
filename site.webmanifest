@@ -1,0 +1,17 @@
+{
+  "name": "Ercin Dedeoglu — Software Architect & Engineer",
+  "short_name": "Ercin Dedeoglu",
+  "description": "Personal site and portfolio of Ercin Dedeoglu, software architect and engineer with 18+ years of experience.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0f0c0a",
+  "theme_color": "#1f1815",
+  "lang": "en",
+  "icons": [
+    { "src": "/favicon.svg", "type": "image/svg+xml", "sizes": "any", "purpose": "any" },
+    { "src": "/icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "/icon-512.png", "type": "image/png", "sizes": "512x512" },
+    { "src": "/apple-touch-icon.png", "type": "image/png", "sizes": "180x180" }
+  ]
+}

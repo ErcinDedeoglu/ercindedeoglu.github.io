@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Writing — Ercin Dedeoglu, AI Architect | LLM, RAG, Agents &amp; AI Security</title>
+    <meta name="description" content="Articles by Ercin Dedeoglu, AI Architect in Dubai — practitioner notes on LLM, RAG, AI agents, sovereign banking AI and AI security. 23 pieces across Medium, LinkedIn and dev.to."/>
+    <meta name="author" content="Ercin Dedeoglu"/>
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1"/>
+    <link rel="canonical" href="https://ercindedeoglu.github.io/writing/"/>
+    <meta name="theme-color" content="#15101f"/>
+
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="Ercin Dedeoglu"/>
+    <meta property="og:title" content="Writing — Ercin Dedeoglu"/>
+    <meta property="og:description" content="Practitioner notes on LLM, RAG, AI agents, sovereign banking AI and AI security."/>
+    <meta property="og:url" content="https://ercindedeoglu.github.io/writing/"/>
+    <meta property="og:image" content="https://ercindedeoglu.github.io/images/og-image.png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:image:alt" content="Ercin Dedeoglu — AI Architect in Dubai"/>
+    <meta property="og:locale" content="en_US"/>
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@AIArchitect"/>
+    <meta name="twitter:creator" content="@AIArchitect"/>
+    <meta name="twitter:title" content="Writing — Ercin Dedeoglu"/>
+    <meta name="twitter:description" content="Practitioner notes on LLM, RAG, AI agents, sovereign banking AI and AI security."/>
+    <meta name="twitter:image" content="https://ercindedeoglu.github.io/images/og-image.png"/>
+
+    <link rel="icon" href="/favicon.ico" sizes="any"/>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+    <link rel="manifest" href="/site.webmanifest"/>
+
+    <link rel="stylesheet" href="/assets/css/site.css"/>
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css"/>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Writing by Ercin Dedeoglu",
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "numberOfItems": 23,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "url": "https://ercin.medium.com/why-enterprise-rag-breaks-before-production-22afb33026a6",
+          "item": {
+            "@type": "BlogPosting",
+            "headline": "Why Enterprise RAG Breaks Before Production",
+            "url": "https://ercin.medium.com/why-enterprise-rag-breaks-before-production-22afb33026a6",
+            "datePublished": "2026-06-20",
+            "description": "Everyone shows me the same enterprise RAG demo. It answers three questions. It looks clean. They smile. I tested it. WRONG.",
+            "author": {
+              "@id": "https://ercin.info/#person"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Medium"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "url": "https://www.linkedin.com/pulse/ai-malware-analysis-met-refusal-trap-ercin-dedeoglu-im1pf",
+          "item": {
+            "@type": "BlogPosting",
+            "headline": "AI Malware Analysis Met The Refusal Trap",
+            "url": "https://www.linkedin.com/pulse/ai-malware-analysis-met-refusal-trap-ercin-dedeoglu-im1pf",
+            "datePublished": "2026-06-12",
+            "description": "AI malware analysis needs intent-aware scanners, not panic refusals. My lab shows how Safety Theater turns malware comments into blind spots fast.",
+            "author": {
+              "@id": "https://ercin.info/#person"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "LinkedIn"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "url": "https://www.linkedin.com/pulse/my-24-hour-gpt-55-cyber-jailbreak-ercin-dedeoglu-kchpf",
+          "item": {
+            "@type": "BlogPosting",
+            "headline": "My 24-Hour GPT-5.5-Cyber Jailbreak",
+            "url": "https://www.linkedin.com/pulse/my-24-hour-gpt-55-cyber-jailbreak-ercin-dedeoglu-kchpf",
+            "datePublished": "2026-05-24",
+            "description": "I got an invite-only access to GPT-5.5-Cyber. In 24 hours I found 3 jailbreaks, 1 sandbox leak, and 1 system prompt extraction. The Trusted Access myth…",
+            "author": {
+              "@id": "https://ercin.info/#person"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "LinkedIn"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "url": "https://www.linkedin.com/pulse/deepseek-codex-ran-13-hours-175-ercin-dedeoglu-n4fde",
+          "item": {
+            "@type": "BlogPosting",
+            "headline": "DeepSeek In Codex Ran 13 Hours For $1.75",
+            "url": "https://www.linkedin.com/pulse/deepseek-codex-ran-13-hours-175-ercin-dedeoglu-n4fde",
+            "datePublished": "2026-05-17",
+            "description": "DeepSeek in Codex ran my agent for 13 hours and 100M tokens for $1.75. Setup, Responses API proxy, real receipt, and the rule that survived.",
+            "author": {
+              "@id": "https://ercin.info/#person"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "LinkedIn"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "url": "https://www.linkedin.com/pulse/ai-actor-why-80-agent-projects-fail-ercin-dedeoglu-c5fsf",
+          "item": {
+            "@type": "BlogPosting",
+            "headline": "AI as Actor: Why 80% of Agent Projects Fail",
+            "url": "https://www.linkedin.com/pulse/ai-actor-why-80-agent-projects-fail-ercin-dedeoglu-c5fsf",
+            "datePublished": "2026-05-04",
+            "description": "Why 80% of AI agent projects fail: the shift from AI as feature to AI as actor is a systems problem. Practitioner lessons on harness and evals.",
+            "author": {
+              "@id": "https://ercin.info/#person"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "LinkedIn"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "url": "https://www.linkedin.com/pulse/when-my-ai-agents-started-approving-each-other-ercin-dedeoglu-8ldbf",
+          "item": {
+            "@type": "BlogPosting",
+            "headline": "When My AI Agents Started Approving Each Other",
+            "url": "https://www.linkedin.com/pulse/when-my-ai-agents-started-approving-each-other-ercin-dedeoglu-8ldbf",
+            "datePublished": "2026-04-26",
+            "description": "The morning my AI agents started approving each other behind my back, the shared scratchpad that caused it, and the four rules I use to stop it.",
+            "author": {
+              "@id": "https://ercin.info/#person"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "LinkedIn"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "url": "https://www.linkedin.com/pulse/ai-agent-resilience-four-rules-i-live-ercin-dedeoglu-ajaxf",
+          "item": {
+            "@type": "BlogPosting",
+            "headline": "AI Agent Resilience: Four Rules I Live By",
+            "url": "https://www.linkedin.com/pulse/ai-agent-resilience-four-rules-i-live-ercin-dedeoglu-ajaxf",
+            "datePublished": "2026-04-19",
+            "description": "AI agent resilience rules I follow: no hard timeouts, escalate instead of killing, never lose context, and only abort when every other path fails.",
+            "author": {
+              "@id": "https://ercin.info/#person"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "LinkedIn"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "url": "https://www.linkedin.com/pulse/separate-intent-from-implementation-pay-later-ercin-dedeoglu-i2eaf",
+          "item": {
+            "@type": "BlogPosting",
+            "headline": "Separate Intent From Implementation or Pay Later",
+            "url": "https://www.linkedin.com/pulse/separate-intent-from-implementation-pay-later-ercin-dedeoglu-i2eaf",
+            "datePublished": "2026-03-30",
+            "description": "I spent 3 days debugging a deployment pipeline last year. The root cause was not a bug.",
+            "author": {
+              "@id": "https://ercin.info/#person"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "LinkedIn"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "url": "https://www.linkedin.com/pulse/checkpoint-heartbeat-pattern-ai-systems-ercin-dedeoglu-pghff",
+          "item": {
+            "@type": "BlogPosting",
+            "headline": "The Checkpoint-Heartbeat Pattern for AI Systems",
+            "url": "https://www.linkedin.com/pulse/checkpoint-heartbeat-pattern-ai-systems-ercin-dedeoglu-pghff",
+            "datePublished": "2026-03-28",
+            "description": "I was 17 days into a 20-day LLM training run when a GPU node died. I restarted from the last checkpoint - saved 4 hours earlier.",
+            "author": {
+              "@id": "https://ercin.info/#person"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "LinkedIn"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "url": "https://www.linkedin.com/pulse/why-your-llm-ignores-what-you-gave-ercin-dedeoglu-owcdf",
+          "item": {
+            "@type": "BlogPosting",
+            "headline": "Why Your LLM Ignores What You Gave It",
+            "url": "https://www.linkedin.com/pulse/why-your-llm-ignores-what-you-gave-ercin-dedeoglu-owcdf",
+            "datePublished": "2026-03-24",
+            "description": "You feed an LLM 20 documents. The answer sits in document #10.",
+            "author": {
+              "@id": "https://ercin.info/#person"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "LinkedIn"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "url": "https://www.linkedin.com/pulse/token-per-task-economics-6-techniques-cut-llm-spend-50-ercin-dedeoglu-x1o8f",
+          "item": {
+            "@type": "BlogPosting",
+            "headline": "Token-Per-Task Economics: 6 Techniques to Cut LLM Spend 50%",
+            "url": "https://www.linkedin.com/pulse/token-per-task-economics-6-techniques-cut-llm-spend-50-ercin-dedeoglu-x1o8f",
+            "datePublished": "2025-12-11",
+            "description": "Cut LLM costs by 40-60% with 6 proven token optimization strategies for GPT-4, GPT-4o and GPT-3.5. Practical guide for AI engineers and platform teams.",
+            "author": {
+              "@id": "https://ercin.info/#person"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "LinkedIn"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "url": "https://ercin.medium.com/knowledge-graphs-supercharge-ai-239f8fc1b970",
+          "item": {
+            "@type": "BlogPosting",
+            "headline": "Knowledge Graphs Supercharge AI",
+            "url": "https://ercin.medium.com/knowledge-graphs-supercharge-ai-239f8fc1b970",
+            "datePublished": "2025-06-02",
+            "description": "Knowledge graphs are everywhere , sometimes even when you can’t see them. From powering Google’s “knowledge panels” (until a UI glitch hits) to anchoring…",
+            "author": {
+              "@id": "https://ercin.info/#person"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Medium"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 13,
+          "url": "https://ercin.medium.com/front-lines-of-the-mcp-82d7c9a91dff",
+          "item": {
+            "@type": "BlogPosting",
+            "headline": "Front Lines of the MCP",
+            "url": "https://ercin.medium.com/front-lines-of-the-mcp-82d7c9a91dff",
+            "datePublished": "2025-05-22",
+            "description": "AI is moving fast, but MCP is moving faster. Whether you’re shipping LLM-powered software, exploring integration points, or just vibing with the latest…",
+            "author": {
+              "@id": "https://ercin.info/#person"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Medium"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 14,
+          "url": "https://ercin.medium.com/artificial-intelligence-in-the-real-world-f970409aa0a1",
+          "item": {
+            "@type": "BlogPosting",
+            "headline": "Artificial Intelligence in the Real World",
+            "url": "https://ercin.medium.com/artificial-intelligence-in-the-real-world-f970409aa0a1",
+            "datePublished": "2025-05-20",
+            "description": "Welcome to the age of artificial intelligence — where job disruption, jaw-dropping tools, deepfake dilemmas and the eternal “dumb user vs. smart tool”…",
+            "author": {
+              "@id": "https://ercin.info/#person"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Medium"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 15,
+          "url": "https://towardsdev.com/become-a-ml-solution-architect-3bad8cc8a97c",
+          "item": {
+            "@type": "BlogPosting",
+            "headline": "Become a ML Solution Architect",
+            "url": "https://towardsdev.com/become-a-ml-solution-architect-3bad8cc8a97c",
+            "datePublished": "2025-05-15",
+            "description": "If you’re reading this, you’ve probably realized that the world doesn’t need another MNIST classifier. Machine learning is everywhere — spanning finance,…",
+            "author": {
+              "@id": "https://ercin.info/#person"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Medium"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 16,
+          "url": "https://medium.com/geekculture/does-my-boss-think-ai-can-do-my-job-54ee60c95bbc",
+          "item": {
+            "@type": "BlogPosting",
+            "headline": "Does my boss think AI can do my job?",
+            "url": "https://medium.com/geekculture/does-my-boss-think-ai-can-do-my-job-54ee60c95bbc",
+            "datePublished": "2025-05-13",
+            "description": "Over the past year, medical communities online have been buzzing with opinions, memes and no shortage of anxiety about the impact of artificial…",
+            "author": {
+              "@id": "https://ercin.info/#person"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Medium"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 17,
+          "url": "https://medium.com/geekculture/ai-is-getting-smarter-but-can-anyone-trust-it-0f3f79b4cf2f",
+          "item": {
+            "@type": "BlogPosting",
+            "headline": "AI Is Getting Smarter, But Can Anyone Trust It?",
+            "url": "https://medium.com/geekculture/ai-is-getting-smarter-but-can-anyone-trust-it-0f3f79b4cf2f",
+            "datePublished": "2025-05-06",
+            "description": "HUMAN GENERATED CONTENT",
+            "author": {
+              "@id": "https://ercin.info/#person"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Medium"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 18,
+          "url": "https://levelup.gitconnected.com/ssh-tunnels-port-forwarding-4123c4d4428d",
+          "item": {
+            "@type": "BlogPosting",
+            "headline": "SSH Tunnels — Port Forwarding",
+            "url": "https://levelup.gitconnected.com/ssh-tunnels-port-forwarding-4123c4d4428d",
+            "datePublished": "2024-06-23",
+            "description": "One of my favorite parts of SSH is tunneling. With just the regular SSH client, you can do wonders! This post will guide you through the basics and…",
+            "author": {
+              "@id": "https://ercin.info/#person"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Medium"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 19,
+          "url": "https://dev.to/ercin/statsniper-system-monitoring-1ik9",
+          "item": {
+            "@type": "BlogPosting",
+            "headline": "StatSniper: System Monitoring",
+            "url": "https://dev.to/ercin/statsniper-system-monitoring-1ik9",
+            "datePublished": "2024-03-19",
+            "description": "In the fast-paced world of technology, finding a system monitoring tool that is both efficient and...",
+            "author": {
+              "@id": "https://ercin.info/#person"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "dev.to"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 20,
+          "url": "https://medium.com/geekculture/statsniper-hassle-free-monitoring-tool-bd22707e19c8",
+          "item": {
+            "@type": "BlogPosting",
+            "headline": "StatSniper: Hassle-Free Monitoring Tool",
+            "url": "https://medium.com/geekculture/statsniper-hassle-free-monitoring-tool-bd22707e19c8",
+            "datePublished": "2024-03-15",
+            "description": "Let me take you on a journey that started with a common frustration in the tech world — keeping servers and computers in check without drowning in…",
+            "author": {
+              "@id": "https://ercin.info/#person"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Medium"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 21,
+          "url": "https://dev.to/ercin/exploring-the-world-of-minuscule-windows-executables-1imk",
+          "item": {
+            "@type": "BlogPosting",
+            "headline": "Exploring the World of Minuscule Windows Executables",
+            "url": "https://dev.to/ercin/exploring-the-world-of-minuscule-windows-executables-1imk",
+            "datePublished": "2023-12-18",
+            "description": "A Journey into Compact Code   The quest for creating the smallest possible Windows Portable...",
+            "author": {
+              "@id": "https://ercin.info/#person"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "dev.to"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 22,
+          "url": "https://towardsdev.com/navigating-the-address-parsing-with-postalized-c53e1b2a38ea",
+          "item": {
+            "@type": "BlogPosting",
+            "headline": "Navigating the Address Parsing with Postalized",
+            "url": "https://towardsdev.com/navigating-the-address-parsing-with-postalized-c53e1b2a38ea",
+            "datePublished": "2023-11-10",
+            "description": "Address data management is a critical aspect of modern software applications, with accurate parsing and expansion being vital to the efficiency of…",
+            "author": {
+              "@id": "https://ercin.info/#person"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Medium"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 23,
+          "url": "https://towardsdev.com/why-do-we-say-leader-election-algorithms-evolved-from-master-slave-2918ee076c70",
+          "item": {
+            "@type": "BlogPosting",
+            "headline": "Why do we say Leader Election algorithms evolved from master-slave?",
+            "url": "https://towardsdev.com/why-do-we-say-leader-election-algorithms-evolved-from-master-slave-2918ee076c70",
+            "datePublished": "2023-05-08",
+            "description": "Two types of coordination: - Master-slave - Leader Election",
+            "author": {
+              "@id": "https://ercin.info/#person"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Medium"
+            }
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+    <div class="container">
+        <div class="brand-mark">
+            <a href="/">Ercin Dedeoglu</a>
+            <span class="tag">AI Architect · Dubai</span>
+        </div>
+        <nav class="nav" aria-label="Primary">
+            <a href="/writing/" aria-current="page">Writing</a>
+            <a href="/projects/">Projects</a>
+            <a href="/about/">About</a>
+        </nav>
+    </div>
+</header>
+
+<main id="main">
+    <section class="article-hero">
+        <div class="container">
+            <span class="kicker">Writing</span>
+            <h1>Notes on building AI that ships</h1>
+            <p class="byline">LLM, RAG, agents, sovereign banking AI and AI security — 23 pieces, newest first. Each links to its source on Medium, LinkedIn or dev.to.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <ul class="post-list">
+                <li><a class="row" href="https://ercin.medium.com/why-enterprise-rag-breaks-before-production-22afb33026a6" rel="noopener" target="_blank">
+                    <span class="row-title">Why Enterprise RAG Breaks Before Production ↗</span>
+                    <span class="row-meta">20 Jun 2026 · Medium</span>
+                    <span class="row-desc">Everyone shows me the same enterprise RAG demo. It answers three questions. It looks clean. They smile. I tested it. WRONG.</span>
+                </a></li>
+                <li><a class="row" href="https://www.linkedin.com/pulse/ai-malware-analysis-met-refusal-trap-ercin-dedeoglu-im1pf" rel="noopener" target="_blank">
+                    <span class="row-title">AI Malware Analysis Met The Refusal Trap ↗</span>
+                    <span class="row-meta">12 Jun 2026 · LinkedIn</span>
+                    <span class="row-desc">AI malware analysis needs intent-aware scanners, not panic refusals. My lab shows how Safety Theater turns malware comments into blind spots fast.</span>
+                </a></li>
+                <li><a class="row" href="https://www.linkedin.com/pulse/my-24-hour-gpt-55-cyber-jailbreak-ercin-dedeoglu-kchpf" rel="noopener" target="_blank">
+                    <span class="row-title">My 24-Hour GPT-5.5-Cyber Jailbreak ↗</span>
+                    <span class="row-meta">24 May 2026 · LinkedIn</span>
+                    <span class="row-desc">I got an invite-only access to GPT-5.5-Cyber. In 24 hours I found 3 jailbreaks, 1 sandbox leak, and 1 system prompt extraction. The Trusted Access myth…</span>
+                </a></li>
+                <li><a class="row" href="https://www.linkedin.com/pulse/deepseek-codex-ran-13-hours-175-ercin-dedeoglu-n4fde" rel="noopener" target="_blank">
+                    <span class="row-title">DeepSeek In Codex Ran 13 Hours For $1.75 ↗</span>
+                    <span class="row-meta">17 May 2026 · LinkedIn</span>
+                    <span class="row-desc">DeepSeek in Codex ran my agent for 13 hours and 100M tokens for $1.75. Setup, Responses API proxy, real receipt, and the rule that survived.</span>
+                </a></li>
+                <li><a class="row" href="https://www.linkedin.com/pulse/ai-actor-why-80-agent-projects-fail-ercin-dedeoglu-c5fsf" rel="noopener" target="_blank">
+                    <span class="row-title">AI as Actor: Why 80% of Agent Projects Fail ↗</span>
+                    <span class="row-meta">4 May 2026 · LinkedIn</span>
+                    <span class="row-desc">Why 80% of AI agent projects fail: the shift from AI as feature to AI as actor is a systems problem. Practitioner lessons on harness and evals.</span>
+                </a></li>
+                <li><a class="row" href="https://www.linkedin.com/pulse/when-my-ai-agents-started-approving-each-other-ercin-dedeoglu-8ldbf" rel="noopener" target="_blank">
+                    <span class="row-title">When My AI Agents Started Approving Each Other ↗</span>
+                    <span class="row-meta">26 Apr 2026 · LinkedIn</span>
+                    <span class="row-desc">The morning my AI agents started approving each other behind my back, the shared scratchpad that caused it, and the four rules I use to stop it.</span>
+                </a></li>
+                <li><a class="row" href="https://www.linkedin.com/pulse/ai-agent-resilience-four-rules-i-live-ercin-dedeoglu-ajaxf" rel="noopener" target="_blank">
+                    <span class="row-title">AI Agent Resilience: Four Rules I Live By ↗</span>
+                    <span class="row-meta">19 Apr 2026 · LinkedIn</span>
+                    <span class="row-desc">AI agent resilience rules I follow: no hard timeouts, escalate instead of killing, never lose context, and only abort when every other path fails.</span>
+                </a></li>
+                <li><a class="row" href="https://www.linkedin.com/pulse/separate-intent-from-implementation-pay-later-ercin-dedeoglu-i2eaf" rel="noopener" target="_blank">
+                    <span class="row-title">Separate Intent From Implementation or Pay Later ↗</span>
+                    <span class="row-meta">30 Mar 2026 · LinkedIn</span>
+                    <span class="row-desc">I spent 3 days debugging a deployment pipeline last year. The root cause was not a bug.</span>
+                </a></li>
+                <li><a class="row" href="https://www.linkedin.com/pulse/checkpoint-heartbeat-pattern-ai-systems-ercin-dedeoglu-pghff" rel="noopener" target="_blank">
+                    <span class="row-title">The Checkpoint-Heartbeat Pattern for AI Systems ↗</span>
+                    <span class="row-meta">28 Mar 2026 · LinkedIn</span>
+                    <span class="row-desc">I was 17 days into a 20-day LLM training run when a GPU node died. I restarted from the last checkpoint - saved 4 hours earlier.</span>
+                </a></li>
+                <li><a class="row" href="https://www.linkedin.com/pulse/why-your-llm-ignores-what-you-gave-ercin-dedeoglu-owcdf" rel="noopener" target="_blank">
+                    <span class="row-title">Why Your LLM Ignores What You Gave It ↗</span>
+                    <span class="row-meta">24 Mar 2026 · LinkedIn</span>
+                    <span class="row-desc">You feed an LLM 20 documents. The answer sits in document #10.</span>
+                </a></li>
+                <li><a class="row" href="https://www.linkedin.com/pulse/token-per-task-economics-6-techniques-cut-llm-spend-50-ercin-dedeoglu-x1o8f" rel="noopener" target="_blank">
+                    <span class="row-title">Token-Per-Task Economics: 6 Techniques to Cut LLM Spend 50% ↗</span>
+                    <span class="row-meta">11 Dec 2025 · LinkedIn</span>
+                    <span class="row-desc">Cut LLM costs by 40-60% with 6 proven token optimization strategies for GPT-4, GPT-4o and GPT-3.5. Practical guide for AI engineers and platform teams.</span>
+                </a></li>
+                <li><a class="row" href="https://ercin.medium.com/knowledge-graphs-supercharge-ai-239f8fc1b970" rel="noopener" target="_blank">
+                    <span class="row-title">Knowledge Graphs Supercharge AI ↗</span>
+                    <span class="row-meta">2 Jun 2025 · Medium</span>
+                    <span class="row-desc">Knowledge graphs are everywhere , sometimes even when you can’t see them. From powering Google’s “knowledge panels” (until a UI glitch hits) to anchoring…</span>
+                </a></li>
+                <li><a class="row" href="https://ercin.medium.com/front-lines-of-the-mcp-82d7c9a91dff" rel="noopener" target="_blank">
+                    <span class="row-title">Front Lines of the MCP ↗</span>
+                    <span class="row-meta">22 May 2025 · Medium</span>
+                    <span class="row-desc">AI is moving fast, but MCP is moving faster. Whether you’re shipping LLM-powered software, exploring integration points, or just vibing with the latest…</span>
+                </a></li>
+                <li><a class="row" href="https://ercin.medium.com/artificial-intelligence-in-the-real-world-f970409aa0a1" rel="noopener" target="_blank">
+                    <span class="row-title">Artificial Intelligence in the Real World ↗</span>
+                    <span class="row-meta">20 May 2025 · Medium</span>
+                    <span class="row-desc">Welcome to the age of artificial intelligence — where job disruption, jaw-dropping tools, deepfake dilemmas and the eternal “dumb user vs. smart tool”…</span>
+                </a></li>
+                <li><a class="row" href="https://towardsdev.com/become-a-ml-solution-architect-3bad8cc8a97c" rel="noopener" target="_blank">
+                    <span class="row-title">Become a ML Solution Architect ↗</span>
+                    <span class="row-meta">15 May 2025 · Medium</span>
+                    <span class="row-desc">If you’re reading this, you’ve probably realized that the world doesn’t need another MNIST classifier. Machine learning is everywhere — spanning finance,…</span>
+                </a></li>
+                <li><a class="row" href="https://medium.com/geekculture/does-my-boss-think-ai-can-do-my-job-54ee60c95bbc" rel="noopener" target="_blank">
+                    <span class="row-title">Does my boss think AI can do my job? ↗</span>
+                    <span class="row-meta">13 May 2025 · Medium</span>
+                    <span class="row-desc">Over the past year, medical communities online have been buzzing with opinions, memes and no shortage of anxiety about the impact of artificial…</span>
+                </a></li>
+                <li><a class="row" href="https://medium.com/geekculture/ai-is-getting-smarter-but-can-anyone-trust-it-0f3f79b4cf2f" rel="noopener" target="_blank">
+                    <span class="row-title">AI Is Getting Smarter, But Can Anyone Trust It? ↗</span>
+                    <span class="row-meta">6 May 2025 · Medium</span>
+                    <span class="row-desc">HUMAN GENERATED CONTENT</span>
+                </a></li>
+                <li><a class="row" href="https://levelup.gitconnected.com/ssh-tunnels-port-forwarding-4123c4d4428d" rel="noopener" target="_blank">
+                    <span class="row-title">SSH Tunnels — Port Forwarding ↗</span>
+                    <span class="row-meta">23 Jun 2024 · Medium</span>
+                    <span class="row-desc">One of my favorite parts of SSH is tunneling. With just the regular SSH client, you can do wonders! This post will guide you through the basics and…</span>
+                </a></li>
+                <li><a class="row" href="https://dev.to/ercin/statsniper-system-monitoring-1ik9" rel="noopener" target="_blank">
+                    <span class="row-title">StatSniper: System Monitoring ↗</span>
+                    <span class="row-meta">19 Mar 2024 · dev.to</span>
+                    <span class="row-desc">In the fast-paced world of technology, finding a system monitoring tool that is both efficient and...</span>
+                </a></li>
+                <li><a class="row" href="https://medium.com/geekculture/statsniper-hassle-free-monitoring-tool-bd22707e19c8" rel="noopener" target="_blank">
+                    <span class="row-title">StatSniper: Hassle-Free Monitoring Tool ↗</span>
+                    <span class="row-meta">15 Mar 2024 · Medium</span>
+                    <span class="row-desc">Let me take you on a journey that started with a common frustration in the tech world — keeping servers and computers in check without drowning in…</span>
+                </a></li>
+                <li><a class="row" href="https://dev.to/ercin/exploring-the-world-of-minuscule-windows-executables-1imk" rel="noopener" target="_blank">
+                    <span class="row-title">Exploring the World of Minuscule Windows Executables ↗</span>
+                    <span class="row-meta">18 Dec 2023 · dev.to</span>
+                    <span class="row-desc">A Journey into Compact Code   The quest for creating the smallest possible Windows Portable...</span>
+                </a></li>
+                <li><a class="row" href="https://towardsdev.com/navigating-the-address-parsing-with-postalized-c53e1b2a38ea" rel="noopener" target="_blank">
+                    <span class="row-title">Navigating the Address Parsing with Postalized ↗</span>
+                    <span class="row-meta">10 Nov 2023 · Medium</span>
+                    <span class="row-desc">Address data management is a critical aspect of modern software applications, with accurate parsing and expansion being vital to the efficiency of…</span>
+                </a></li>
+                <li><a class="row" href="https://towardsdev.com/why-do-we-say-leader-election-algorithms-evolved-from-master-slave-2918ee076c70" rel="noopener" target="_blank">
+                    <span class="row-title">Why do we say Leader Election algorithms evolved from master-slave? ↗</span>
+                    <span class="row-meta">8 May 2023 · Medium</span>
+                    <span class="row-desc">Two types of coordination: - Master-slave - Leader Election</span>
+                </a></li>
+            </ul>
+            <p class="section-sub" style="margin-top:28px">
+                Aggregated from <a href="https://ercin.info" rel="me">ercin.info</a>. My full profile lives there.
+            </p>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div>
+            <strong>Ercin Dedeoglu</strong> — AI Architect, Dubai<br/>
+            <span class="foot-note">Canonical profile: <a href="https://ercin.info" rel="me">ercin.info</a> · &copy; 2026 Ercin Dedeoglu</span>
+        </div>
+        <ul class="social">
+            <li><a href="https://www.linkedin.com/in/ercindedeoglu/" rel="me noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+            <li><a href="https://github.com/ErcinDedeoglu" rel="me noopener" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="https://x.com/AIArchitect" rel="me noopener" aria-label="X (Twitter)"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="https://ercin.medium.com/" rel="me noopener" aria-label="Medium"><i class="fab fa-medium" aria-hidden="true"></i></a></li>
+            <li><a href="https://dev.to/ercin" rel="me noopener" aria-label="dev.to"><i class="fab fa-dev" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

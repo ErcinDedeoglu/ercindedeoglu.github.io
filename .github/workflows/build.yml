@@ -1,0 +1,49 @@
+name: Build site
+
+# Regenerates all pages from data/ — refreshing the writing feed from
+# https://ercin.info/api/writing — and commits the result so GitHub Pages redeploys.
+
+on:
+  schedule:
+    - cron: '17 5 * * *'      # daily, 05:17 UTC
+  push:
+    branches: [main]
+    paths:
+      - 'data/**'
+      - 'scripts/build.py'
+      - '.github/workflows/build.yml'
+  workflow_dispatch:           # manual "Run workflow" button
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-site
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build (refresh writing feed, fall back to snapshot if API is down)
+        run: python3 scripts/build.py --fetch || python3 scripts/build.py
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes — site already up to date."
+          else
+            git commit -m "chore: rebuild site from writing feed [skip ci]"
+            git push
+          fi

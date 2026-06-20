@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Ercin Dedeoglu — AI Architect in Dubai">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c1530"/>
+      <stop offset="0.55" stop-color="#15101f"/>
+      <stop offset="1" stop-color="#100b18"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8a6bff"/>
+      <stop offset="1" stop-color="#b74e91"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="80%" cy="6%" r="60%">
+      <stop offset="0" stop-color="#6c4cff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#6c4cff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="0" y="0" width="1200" height="8" fill="url(#accent)"/>
+
+  <!-- Monogram -->
+  <rect x="80" y="92" width="118" height="118" rx="26" fill="none" stroke="#8a6bff" stroke-width="3"/>
+  <text x="139" y="154" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="700"
+        fill="#efeaff" text-anchor="middle" dominant-baseline="central" letter-spacing="-2">ED</text>
+
+  <!-- Name -->
+  <text x="80" y="318" font-family="Georgia, 'Times New Roman', serif" font-size="90" font-weight="700"
+        fill="#f4f1ff" letter-spacing="-2">Ercin Dedeoglu</text>
+
+  <!-- Title -->
+  <text x="84" y="388" font-family="Helvetica, Arial, sans-serif" font-size="40" font-weight="600"
+        fill="#c9b6ff" letter-spacing="1">AI Architect · Dubai</text>
+
+  <!-- Strapline -->
+  <text x="84" y="466" font-family="Helvetica, Arial, sans-serif" font-size="27" fill="#a99fc6">
+    Enterprise LLM, RAG &amp; agentic systems for regulated banking
+  </text>
+  <text x="84" y="504" font-family="Helvetica, Arial, sans-serif" font-size="27" fill="#a99fc6">
+    on sovereign cloud
+  </text>
+
+  <!-- URL -->
+  <text x="84" y="574" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#7a5cff"
+        letter-spacing="2">ercindedeoglu.github.io</text>
+</svg>

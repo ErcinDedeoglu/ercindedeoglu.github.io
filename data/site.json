@@ -1,0 +1,48 @@
+{
+  "site_url": "https://ercindedeoglu.github.io",
+  "canonical_profile": "https://ercin.info",
+  "person_id": "https://ercin.info/#person",
+  "name": "Ercin Dedeoglu",
+  "given_name": "Ercin",
+  "family_name": "Dedeoglu",
+  "role": "AI Architect",
+  "location": "Dubai",
+  "tagline": "AI Architect · Dubai",
+  "twitter_handle": "@AIArchitect",
+  "theme_color": "#15101f",
+  "og_image": "/images/og-image.png",
+  "works_for": { "name": "SBS", "url": "https://www.sbs-software.com" },
+  "address": { "locality": "Dubai", "country": "AE" },
+  "knows_about": [
+    "AI Architecture",
+    "Large Language Models",
+    "Retrieval-Augmented Generation",
+    "Agentic AI",
+    "Sovereign AI",
+    "Model-agnostic LLM gateways",
+    "Enterprise AI",
+    "Regulated Banking AI",
+    "MLOps"
+  ],
+  "nav": [
+    { "label": "Writing", "path": "/writing/" },
+    { "label": "Projects", "path": "/projects/" },
+    { "label": "About", "path": "/about/" }
+  ],
+  "socials": [
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/ercindedeoglu/", "icon": "fa-linkedin-in" },
+    { "label": "GitHub", "url": "https://github.com/ErcinDedeoglu", "icon": "fa-github" },
+    { "label": "X (Twitter)", "url": "https://x.com/AIArchitect", "icon": "fa-twitter" },
+    { "label": "Medium", "url": "https://ercin.medium.com/", "icon": "fa-medium" },
+    { "label": "dev.to", "url": "https://dev.to/ercin", "icon": "fa-dev" }
+  ],
+  "sameas_extra": [
+    "https://orcid.org/0009-0004-0792-5310"
+  ],
+  "stats": [
+    { "num": "2.5M", "lbl": "concurrent connections sustained on a backend I built" },
+    { "num": "18+", "lbl": "years architecting high-load, secure systems" },
+    { "num": "~60%", "lbl": "LLM tokens cut by moving a pipeline JSON → TOON" },
+    { "num": "100%", "lbl": "focus on regulated, auditable AI on sovereign cloud" }
+  ]
+}
